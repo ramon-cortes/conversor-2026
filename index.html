@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon.ico">
+  <link rel="stylesheet" type="text/css" href="./conv.css">
+  <title>Conversor 2026</title>
+</head>
+<body>
+  
+  <div class="calculadora">
+    <div class="titulo">Mi Conversor 2026</div>
+    <!-- Div Select e Input -->
+    <div class="datos">
+      <select class="select" name="medida" id="medidas" onchange="convertir()">
+        <option value="Pies">Pies</option>
+        <option value="Centimetros">Centimetros</option>
+        <option value="Pulgadas">Pulgadas</option>
+        <option value="Kilogramos">Kilogramos</option>
+        <option value="Libras">Libras</option>
+        <option value="Nudos">Nudos</option>
+        <option value="Km/h">Km/h</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Centigrados">Centigrados</option>
+        <option value="Millas">Millas</option>
+        <option value="Kilometros">Kilometros</option>
+        <option value="KW">KW</option>
+        <option value="HP">HP</option>
+        <option value="Sqft">Sqft</option>
+        <option value="M2">M2</option>
+        <option value="Oz">Oz</option>
+        <option value="Ml">Ml</option>
+        <option value="Gr">Gr</option>
+        <option value="Gal">Gal</option>
+        <option value="L">L</option>
+        <option value="Lumens">Lumens</option>
+        <option value="Watts">Watts</option>
+      </select>
+      <input   type="text" id="input" oninput="convertir()">
+    </div>
+    <!-- Div Resultado -->
+     <div class="salida" id="salida"></div>
+    <!-- Tabla o Cuadrícula para los botones -->
+    <div class="div-botones">
+      <table>
+        <tr>
+          <td><div class="boton" onclick="addChar('7')">7</div></td>          
+          <td><div class="boton" onclick="addChar('8')">8</div></td>
+          <td><div class="boton" onclick="addChar('9')">9</div></td>
+        </tr>
+        <tr>
+          <td><div class="boton" onclick="addChar('4')">4</div></td>          
+          <td><div class="boton" onclick="addChar('5')">5</div></td>
+          <td><div class="boton" onclick="addChar('6')">6</div></td>
+        </tr>
+        <tr>
+          <td><div class="boton" onclick="addChar('1')">1</div></td>          
+          <td><div class="boton" onclick="addChar('2')">2</div></td>
+          <td><div class="boton" onclick="addChar('3')">3</div></td>
+        </tr>
+        <tr>
+          <td><div class="boton" onclick="addChar('0')">0</div></td>          
+          <td><div class="boton" onclick="addChar('.')">.</div></td>
+          <td><div class="boton" onclick="addChar('/')">/</div></td>
+        </tr>
+        <tr>
+          <td><div class="boton" onclick="addChar('C')">C</div></td>          
+          <td><div class="boton" onclick="addChar('_')">_</div></td>
+          <td><div class="boton" onclick="addChar('←')">←</div></td>
+        </tr>        
+      </table>
+    </div>
+    <div class="instrucciones">
+      INSTRUCCIONES
+      <br>
+      <ul>
+        <li></li>
+      </ul>
+      Al usar pies se puede agregar pulgadas (11 max) y
+      cuartos de pulgada (1/4 2/4 1/2 3/4).
+      [xx xx x/x]
+      Ej: 5 5 3/4
+      Valores erroneos o incompletos serán ignorados.
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./conv.js"></script>  
+</body>
+</html>

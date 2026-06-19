@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+  --c-obscuro: rgb(250, 87, 22);
+  --c-claro: rgb(243, 158, 102);
+  --c-titulo: black;
+}
+
+body {
+  font-family: 'Kode Mono';
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.calculadora {
+  background-color: var(--c-claro);
+  width: 325px;
+  height: 475px;
+}
+
+.titulo {
+  background-color: var(--c-titulo);
+  color: var(--c-claro);
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.datos {
+  padding: 5px;
+}
+
+.select {
+  font-family: 'Kode Mono', 'OCR A Extended';  
+  width: 170px;
+}
+
+input {
+  font-family: 'Kode Mono';
+  width: 100px;
+}
+
+.salida {
+  padding: 5px;
+  height: 45px;
+}
+
+.div-botones {
+  background-color: var(--c-obscuro);
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+table {
+  margin: 0 auto;
+}
+
+table, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 1px;
+}
+
+tr, td {
+  width: 50px;
+  height: 50px;
+}
+
+.boton {
+  background-color: lightcoral;
+  text-align: center;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  box-shadow: 4px 5px 10px black;
+  border-radius: 40%;
+  position: relative;
+  top: 0px;
+  left: 7px;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: brown;
+}
+
+.boton:active {
+  background-color: black;
+  color: white;
+  left: 12px;
+  top: 6px;
+  box-shadow: none;
+  border: 2px solid white;
+}
+
+.instrucciones {
+  font-size: 0.8rem;
+}
