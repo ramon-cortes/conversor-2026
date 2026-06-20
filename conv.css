@@ -4,6 +4,7 @@
   --c-obscuro: rgb(250, 87, 22);
   --c-claro: rgb(243, 158, 102);
   --c-titulo: black;
+  --padding-left: 8px;
 }
 
 body {
@@ -15,44 +16,67 @@ body {
 .calculadora {
   background-color: var(--c-claro);
   width: 325px;
-  height: 475px;
+  height: 550px;
+  border-radius: 20px;
 }
 
 .titulo {
   background-color: var(--c-titulo);
-  color: var(--c-claro);
+  color: var(--c-obscuro);
   font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .datos {
-  padding: 5px;
+  padding: var(--padding-left);
 }
 
 .select {
   font-family: 'Kode Mono', 'OCR A Extended';  
   width: 170px;
+  background-color: var(--c-obscuro);
+  border-radius: 4px;
+}
+
+select>option>selected {
+  background-color: var(--c-claro);
 }
 
 input {
   font-family: 'Kode Mono';
   width: 100px;
+  border-radius: 4px;
+  padding-left: 4px;
+  padding-top: 2px;
+  background-color: var(--c-obscuro);
+  box-shadow: inset 2px 2px 1px black;
 }
 
 .salida {
+  margin-left: var(--padding-left);
+  margin-right: var(--padding-left);
+  margin-bottom: var(--padding-left);
+  background-color: var(--c-obscuro);
   padding: 5px;
   height: 45px;
+  font-weight: bold;
+  box-shadow: inset 2px 2px 1px black;
+  border-radius: 10px;
 }
 
 .div-botones {
   background-color: var(--c-obscuro);
-  width: 200px;
+  width: 220px;
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 1px black;
 }
 
 table {
@@ -60,22 +84,24 @@ table {
 }
 
 table, th, tr, td {
-  border: 1px solid black;
+  border: 0px solid black;
   border-collapse: collapse;
   padding: 1px;
 }
 
 tr, td {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
 }
 
 .boton {
   background-color: lightcoral;
+  font-weight: bolder;
+  font-size: 1.1rem;
   text-align: center;
-  line-height: 30px;
-  width: 30px;
-  height: 30px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
   border: 2px solid black;
   box-shadow: 4px 5px 10px black;
   border-radius: 40%;
@@ -99,5 +125,7 @@ tr, td {
 }
 
 .instrucciones {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  padding-left: var(--padding-left);
+  padding-top: 10px;
 }
