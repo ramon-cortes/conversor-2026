@@ -16,8 +16,9 @@ body {
 .calculadora {
   background-color: var(--c-claro);
   width: 325px;
-  height: 550px;
+  height: 570px;
   border-radius: 20px;
+  box-shadow: 4px 4px 2px black;
 }
 
 .titulo {
@@ -128,4 +129,9 @@ tr, td {
   font-size: 0.75rem;
   padding-left: var(--padding-left);
   padding-top: 10px;
+}
+
+.version {
+  padding-right: 8px;
+  text-align: right;
 }
